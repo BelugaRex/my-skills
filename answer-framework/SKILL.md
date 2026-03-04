@@ -1,46 +1,88 @@
 ---
 name: answer-framework
-description: Guide AI to use the "Answer-Evidence-Warrant" structure for clear and persuasive responses. / 指导AI使用“结论-证据-推理”结构来构建清晰、有说服力的回答。
+description: Guide AI to deliver clear, evidence-based answers naturally. / 指导AI提供清晰、有据可依的自然回答。
 ---
 
-# Answer with Evidence and Warrant / 结论-证据-推理 回答框架
+# Answer with Clarity and Evidence / 有理有据，自然表达
 
-When answering a question, use the **Answer-Evidence-Warrant** structure. This ensures your response is clear, convincing, and shows your reasoning process.  
-当需要回答问题时，请使用**结论先行-提供证据-逻辑推理**的三段式结构。这能让回答清晰有力，并展示完整的思考过程。
+This skill helps you construct persuasive answers by always leading with a conclusion, supporting it with evidence, and explaining the connection — but the goal is **natural fluency**, not rigid structure.  
+本技能帮助你构建有说服力的回答：结论先行，提供证据，解释联系。但目标是**行文自然流畅**，而非机械套用模板。
 
-## Structure Explanation / 结构说明
+---
 
-### 1. Answer / 结论先行
-- **English**: Start with a direct and concise answer to the question.  
-- **中文**：首先直接给出问题的明确答案，用一句话概括你的立场或结论。
+## Core Mindset / 核心思维
 
-### 2. Evidence / 提供证据
-- **English**: Provide facts, data, observations, or reasons that support your answer. The evidence should be specific, relevant, and verifiable.  
-- **中文**：提供支持答案的事实、数据、观察或理由。证据应该具体、相关且可验证。
+Every good answer, regardless of length, should implicitly contain three elements:  
+任何优质回答，无论长短，都应隐含三个要素：
 
-### 3. Warrant / 逻辑推理
-- **English**: Explain why the evidence supports your answer. Show the logical connection between the evidence and the conclusion.  
-- **中文**：解释为什么这些证据能够支持你的答案，说明证据与结论之间的逻辑联系。
+1. **Conclusion** – Directly address the question upfront.  
+   **结论** – 开门见山，直接回应问题。
+2. **Evidence** – Provide facts, data, or reasons that support your conclusion.  
+   **证据** – 提供事实、数据或理由来支撑结论。
+3 **Reasoning** – Explain how the evidence logically leads to the conclusion.  
+   **推理** – 解释证据如何必然推导出结论。
 
-## Examples / 示例
+These three pieces form the **invisible scaffolding** of your answer. They don't have to appear as separate sentences or sections.  
+这三个部分构成回答的**隐形骨架**，不必以独立句子或段落的形式出现。
 
-**Question: Are bears mammals? / 熊是哺乳动物吗？**
-- **Answer / 结论**: Yes, bears are mammals. / 是的，熊是哺乳动物。
-- **Evidence / 证据**: Bears have fur. / 熊有毛发。
-- **Warrant / 推理**: All animals that have fur or hair are mammals. / 所有有毛发的动物都是哺乳动物。
+---
 
-**Question: Is Hong Kong a great city to live in? / 香港适合居住吗？**
-- **Answer / 结论**: Yes, Hong Kong is awesome! / 是的，香港非常适合居住！
-- **Evidence / 证据**: Hong Kong has lots of hiking trails. / 香港有很多徒步路线。
-- **Warrant / 推理**: People find that living in cities with outdoor activities is very enjoyable. / 人们通常觉得生活在有户外活动的城市很惬意。
-- **Evidence / 证据**: Hong Kong has a very convenient public transportation. / 香港公共交通非常便利。
-- **Warrant / 推理**: This saves a lot of commuting time. / 这样可以节省大量通勤时间。
+## How to Avoid Being Rigid / 如何避免死板
 
-## Format Suggestions / 格式建议
-- You can write in paragraphs, ensuring each paragraph contains all three components.  
-  你可以用段落形式书写，确保每段都包含三个要素。
-- You can also use bullet points or numbered lists for clarity, as shown above.  
-  也可以用列表清晰呈现，如上所示。
+### ✅ Adapt to the question type / 根据问题类型灵活调整
+- **Simple factual questions** (e.g., "Are bears mammals?"):  
+  Merge conclusion + evidence into one smooth sentence.  
+  **简单事实型问题**（如“熊是哺乳动物吗？”）：将结论与证据融合为一句流畅的话。
+- **Explanatory questions** (e.g., "Why is Hong Kong a great city to live in?"):  
+  Start with the conclusion, then give evidence with brief reasoning in natural paragraphs.  
+  **解释型问题**（如“香港为什么适合居住？”）：结论先行，然后用自然段落逐一呈现证据和推理。
+- **Complex or controversial questions** (e.g., "Will AI replace human jobs?"):  
+  State the conclusion, then expand with multiple evidence–reasoning pairs, each in its own paragraph.  
+  **复杂/争议型问题**（如“AI会取代人类工作吗？”）：给出结论后，用多个段落展开证据与推理。
 
-Remember: A good answer always leads with the conclusion, then supports it with evidence and reasoning.  
-记住：好的答案总是先给出结论，然后用证据和推理来支撑它。
+### ✅ Use connectors, not labels / 用连接词代替标签
+Avoid explicitly writing “Answer:”, “Evidence:”, “Warrant:”. Instead, use natural transitions:  
+避免直接写出“答案：”“证据：”“推理：”等标签，而是使用自然的过渡词：
+
+- To introduce evidence: **because, since, as, for example, this is due to…**  
+  引出证据：**因为、由于、例如、这得益于……**
+- To show reasoning: **which means, therefore, thus, this explains why, in other words…**  
+  引出推理：**这意味着、因此、由此可见、也就是说……**
+- To restate the conclusion: **so, in short, overall, as a result…**  
+  重申结论：**所以、简言之、总的来说、因此……**
+
+### ✅ Keep language natural / 保持语言自然
+- Imagine you’re explaining to a friend, not filling out a form.  
+  想象你在向朋友解释，而不是在填写模板。
+- Feel free to use rhetorical questions, emphasis, or even a touch of personality when appropriate.  
+  可以适当使用反问、强调等修辞，让回答更有温度。
+
+---
+
+## Before & After Examples / 示例对比
+
+**Q: Are bears mammals? / 熊是哺乳动物吗？**  
+- *Rigid style / 死板风格*:  
+  Yes, bears are mammals. Evidence: Bears have fur. Warrant: All animals with fur are mammals.  
+  （是的，熊是哺乳动物。证据：熊有毛发。推理：所有有毛发的动物都是哺乳动物。）
+- *Natural style / 自然风格*:  
+  Yes, bears are mammals because they have fur — and all furry animals are mammals.  
+  （是的，熊是哺乳动物，因为它们有毛发——而有毛发的动物都属于哺乳动物。）
+
+**Q: Is Hong Kong a great city to live in? / 香港适合居住吗？**  
+- *Rigid style / 死板风格*:  
+  Yes. Evidence: Hong Kong has many hiking trails. Warrant: People enjoy outdoor activities. Evidence: Convenient public transport. Warrant: Saves commuting time.  
+  （是的。证据：香港有很多徒步路线。推理：人们喜欢户外活动。证据：公共交通便利。推理：节省通勤时间。）
+- *Natural style / 自然风格*:  
+  Absolutely! Hong Kong is fantastic for living. First, it’s surrounded by hiking trails — perfect for nature lovers. Plus, the public transport is so efficient that you can get anywhere quickly, leaving more time for life.  
+  （当然！香港非常适合居住。首先，这里遍布徒步路线，对自然爱好者来说简直是天堂。而且公共交通非常高效，去哪里都快，让你有更多时间享受生活。）
+
+---
+
+## Advanced Tip / 进阶提示
+
+If the user explicitly asks for a “detailed explanation” or “arguments,” you can deepen the reasoning and add more evidence. If it’s a casual question, keep it concise.  
+如果用户明确要求“详细解释”或“论证”，可以适当增加推理深度和更多证据；如果是随口一问，保持简洁即可。
+
+Remember: the structure is your **thinking tool**, not your **writing cage**. Let logic guide you, but let language flow.  
+记住：结构是你的**思考工具**，而非**表达牢笼**。让逻辑引导你，但让语言自然流淌。
