@@ -14,7 +14,7 @@ tags: [coding, testing, verification, quality-assurance, bilingual]
 - **连续两次验证**：修改后立即进行两次验证，**两次均无错误**才能结束。
 - **同样严谨**：两次验证使用相同的方式（如相同的测试命令或运行命令），确保结果可靠。
 - **自动触发**：无需用户额外提示，AI 应主动遵循本流程。
-- **验证目标**：确保修改后的代码能够**顺利运行**（无编译/运行时错误，且原有功能不受影响）。
+- **验证目标**：确保修改后的文件变更能够**顺利通过对应检查**（无编译/运行/构建/文档校验错误，且原有功能或内容不受影响）。
 
 ## 📌 适用场景 / Applicable Scenarios
 
@@ -60,7 +60,7 @@ tags: [coding, testing, verification, quality-assurance, bilingual]
 ### 5. 结果处理
 - **如果验证失败**：
   - 向用户报告错误详情（错误信息、行号等）。
-  - 根据错误修正代码。
+  - 根据错误修正相关文件变更。
   - 返回步骤 4（第一次验证）重新开始，**计数重置**。
 - **如果验证成功**：
   - 记录“第一次成功”。
@@ -76,7 +76,7 @@ tags: [coding, testing, verification, quality-assurance, bilingual]
   - 结束任务。
 - **如果第二次验证失败**：
   - 向用户报告失败详情（可能是偶发性问题或修改引入的新错误）。
-  - 根据错误修正代码。
+  - 根据错误修正相关文件变更。
   - 返回步骤 4（第一次验证），**计数重置**，重新开始双重验证流程。
 
 ## 🔧 验证方式示例
@@ -134,7 +134,7 @@ tags: [coding, testing, verification, quality-assurance, bilingual]
 - **删除功能的特殊考虑**：删除功能时，需确保移除了所有相关引用（如调用、导入、配置），避免残留代码导致错误。
 - **验证方式协商**：如果项目没有标准的验证命令，AI **必须**与用户协商确定验证方式（如简单的运行命令或构建脚本），并告知用户该方式的局限性（只能发现运行时/构建错误，不能保证逻辑或内容正确）。
 - **验证命令可用性**：确保验证命令在环境中可用。如果无法执行（例如没有运行环境），应与用户协商替代方案（如人工审查）。
-- **连续两次**：强调“连续”意味着两次验证之间**没有新的代码修改**，只有验证执行。
+- **连续两次**：强调“连续”意味着两次验证之间**没有新的文件修改**，只有验证执行。
 - **同样严谨**：两次验证应使用**完全相同的方式**（包括命令、参数、环境等），以确保结果一致且可靠。
 - **验证独立性**：如果工具存在缓存机制可能影响结果，建议使用清除缓存的相关选项（如 `npm test -- --no-cache`、`pytest --cache-clear` 等）确保两次验证真实独立。
 - **超时处理**：如果验证命令运行时间过长（例如超过 5 分钟），可提示用户并建议手动检查，或允许用户中断。
@@ -146,5 +146,5 @@ tags: [coding, testing, verification, quality-assurance, bilingual]
 
 ---
 
-> **记住：代码质量不是偶然，而是双重验证的结果。本技能应默认应用于每次代码修改。**  
-> **Remember: Code quality is not an accident; it's the result of double-checking. This skill should be applied by default to every code modification.**
+> **记住：文件质量不是偶然，而是双重验证的结果。本技能应默认应用于每次文件修改。**  
+> **Remember: File quality is not an accident; it's the result of double-checking. This skill should be applied by default to every file modification.**
