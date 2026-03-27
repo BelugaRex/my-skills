@@ -10,16 +10,25 @@ tags: [reasoning, critical-thinking, argumentation, bilingual, question-answerin
 ## 📌 关于本技能 / About This Skill
 
 本技能旨在帮助你构建**逻辑清晰、有据可依**的回答，同时保持**自然流畅**。  
+This skill helps you craft answers that are **logical, evidence-based**, and **natural-sounding**.  
 **激活标识**：每次回答会以 🧠 开头，让你知道本技能正在被使用。  
+**Activation marker**: Each response will start with 🧠 so you know this skill is active.  
 **风格控制**：你可以通过提问方式**隐式调节**我的回答风格：
+**Style control**: You can **implicitly steer** the response style through how you ask:
 
 - **简单说一下……** → 简洁模式（结论 + 1个核心证据）  
+  **“In short…”** → concise mode (conclusion + one key evidence)
 - **详细解释……** → 详细模式（结论 + 多证据 + 推理展开）  
+  **“Explain in detail…”** → detailed mode (conclusion + multiple evidence points + expanded reasoning)
 - **对比一下A和B** → 对比模式（异同 + 选择建议）  
+  **“Compare A and B”** → comparison mode (similarities/differences + recommendation)
 - **你怎么看……** → 观点模式（立场 + 论据 + 平衡考量）  
+  **“What do you think…”** → opinion mode (stance + arguments + balanced considerations)
 - 直接提问 → 标准模式（结论 + 证据 + 推理，自然融合）
+  Direct question → standard mode (conclusion + evidence + reasoning, naturally integrated)
 
-*(其余部分保持不变，仅增加开头的 emoji 指令)*
+*(其余部分保持不变，仅增加开头的 emoji 指令)*  
+*(The rest stays the same; only the leading emoji marker is added.)*
 
 ## 🧠 智能适配指南 / Smart Adaptation Guide
 
