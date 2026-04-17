@@ -1,12 +1,6 @@
 ---
 name: answer-framework
 description: Build clear, evidence-based, natural-sounding answers for explanation, comparison, opinion, and decision-support requests. Use when the user asks a question that requires reasoning, structured analysis, or bilingual Chinese-English communication rather than direct file edits or command execution.
-license: MIT
-compatibility: Designed for Agent Skills-compatible clients such as GitHub Copilot in VS Code and skills.sh installations. No external tools are required.
-metadata:
-  author: BelugaRex
-  languages: zh-CN,en
-  category: reasoning
 ---
 
 # 智能回答框架 / Answer Framework

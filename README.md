@@ -56,6 +56,7 @@ These skills are intentionally written to:
 每个 skill 目录至少包含一个 `SKILL.md`，并满足以下要求：
 
 - 目录名与 frontmatter 里的 `name` 一致
+- frontmatter 至少包含且建议仅保留 `name` 与 `description`（`skills.sh`/`skills` CLI 最低必需字段）
 - `description` 明确说明能力和触发场景
 - 正文尽量保持简洁、结构化、适合按需加载
 - 仓库层保留一个公共 `README.md`，不要求每个 skill 单独提供 `README.md`
@@ -63,9 +64,17 @@ These skills are intentionally written to:
 Each skill directory contains at least a `SKILL.md` file, with:
 
 - a directory name that matches the frontmatter `name`
+- frontmatter that includes (and preferably keeps to) the required `name` and `description` fields
 - a `description` that explains both the capability and when to use it
 - a concise, structured body that is suitable for on-demand loading by Copilot
 - one shared repository-level `README.md` as the main documentation entry point, instead of requiring a per-skill `README.md`
+
+## ✅ skills.sh 同步前自检 / Pre-sync checklist for skills.sh
+
+- 每个 `SKILL.md` 的 YAML frontmatter 可被正确解析
+- 必需字段齐全：`name`、`description`
+- `name` 使用小写与连字符风格（kebab-case）并与目录名一致
+- 仓库公开可访问，且可以通过 `npx skills add <owner>/<repo> --list` 枚举到技能
 
 ## 🗂️ 推荐目录结构 / Recommended directory layout
 

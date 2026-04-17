@@ -1,12 +1,6 @@
 ---
 name: double-check
 description: Enforce two consecutive validations after file changes such as code edits, refactors, deletions, documentation updates, or configuration changes. Use when the task modifies files and the agent should verify correctness before finishing.
-license: MIT
-compatibility: Designed for Agent Skills-compatible clients such as GitHub Copilot in VS Code and skills.sh installations. Best used when terminal, test, or build commands are available.
-metadata:
-  author: BelugaRex
-  languages: zh-CN,en
-  category: verification
 ---
 
 # 双重验证 / Double Check

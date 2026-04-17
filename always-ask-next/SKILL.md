@@ -1,12 +1,6 @@
 ---
 name: always-ask-next
 description: Ask the user what to do next before ending a completed task, and offer 3 context-aware follow-up suggestions plus a freeform option. Use when the workflow could naturally continue and you want the agent to avoid stopping too early.
-license: MIT
-compatibility: Designed for Agent Skills-compatible clients such as GitHub Copilot in VS Code and skills.sh installations. No external tools are required.
-metadata:
-  author: BelugaRex
-  languages: zh-CN,en
-  category: workflow
 ---
 
 # 始终追问下一步 / Always Ask Next
