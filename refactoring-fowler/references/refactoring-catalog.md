@@ -18,10 +18,11 @@
 | 手法 / Refactoring | 页码 | 用途 / When | 反向 / Inverse |
 | --- | --- | --- | --- |
 | 提炼函数 Extract Function | 106 | 一段代码意图需要注释才能看懂时，按"做什么"命名提炼 | 内联函数（115） |
-| 内联函数 Inline Function | 115 | 函数体与名字一样直白；间接层失去价值 | — |
+| 内联函数 Inline Function | 115 | 函数体与名字一样直白；间接层失去价值 | 提炼函数（106） |
 | 提炼变量 Extract Variable | 119 | 复杂表达式拆出有名字的局部量 | 内联变量（123） |
-| 内联变量 Inline Variable | 123 | 变量名没比表达式本身传达更多信息 | — |
+| 内联变量 Inline Variable | 123 | 变量名没比表达式本身传达更多信息 | 提炼变量（119） |
 | 改变函数声明 Change Function Declaration | 124 | 改名、增删参数、统一签名（别名：Rename Function / Add / Remove Parameter） | — |
+| 移除参数 Remove Argument | 127 | 删去调用方不再需要的参数（经改变函数声明实施） | — |
 | 封装变量 Encapsulate Variable | 132 | 变量需要收窄访问面、为搬移/演化铺路 | — |
 | 变量改名 Rename Variable | 137 | 名字不达意 | — |
 | 引入参数对象 Introduce Parameter Object | 140 | 一组数据总是结伴作为参数出现 | — |
@@ -63,6 +64,7 @@
 | --- | --- | --- | --- |
 | 拆分变量 Split Variable | 240 | 变量被多次赋值、身兼多职 | — |
 | 变量改名 Rename Variable | 137 | 名字不达意 | — |
+| 改名字段 Rename Field | 244 | 字段名不达意；封装后可新老访问器并存渐进替换 | — |
 | 以查询取代派生变量 Replace Derived Variable with Query | 248 | 可计算的派生值直接算出来，别存中间副本 | — |
 | 将引用对象改为值对象 Change Reference to Value | 252 | 对象小且不可变时值语义更简单 | 将值对象改为引用对象（256） |
 | 将值对象改为引用对象 Change Value to Reference | 256 | 多处需要共享同一实体（如订单 → 客户） | 将引用对象改为值对象（252） |
@@ -102,7 +104,7 @@
 | 构造函数本体上移 Pull Up Constructor Body | 355 | 子类构造中的公共初始化上移 | — |
 | 函数下移 Push Down Method | 359 | 只有部分子类需要的函数下沉 | 函数上移（350） |
 | 字段下移 Push Down Field | 361 | 只有部分子类需要的字段下沉 | 字段上移（353） |
-| 以子类取代类型码 Replace Type Code with Subclasses | 362 | 类型码只影响行为差异且外部不可变 | — |
+| 以子类取代类型码 Replace Type Code with Subclasses | 362 | 类型码只影响行为差异且外部不可变 | 移除子类（369） |
 | 移除子类 Remove Subclass | 369 | 子类已无差异（常因以委托取代后） | 以子类取代类型码（362） |
 | 提炼超类 Extract Superclass | 375 | 两个类有共同的函数/字段 | — |
 | 折叠继承体系 Collapse Hierarchy | 380 | 超类与子类已无实质差别 | — |
@@ -114,7 +116,7 @@
 - **过长函数** → Extract Function（106）为主轴，循环配 Split Loop（227）/管道（231），条件配卫语句（266）。
 - **条件分支大量重复** → Replace Type Code with Subclasses（362）+ Replace Conditional with Polymorphism（272）。
 - **加新功能前的预备重构** → Split Phase（154）、Extract Class（182）、Move Function（198）最常让改动"变容易"。
-- **数据传参混乱** → Introduce Parameter Object（140）+ Preserve Whole Object（131）+ Remove Flag Argument（314）。
+- **数据传参混乱** → Introduce Parameter Object（140）+ Preserve Whole Object（319）+ Remove Flag Argument（314）。
 
 ## 书外资源 / External resources
 

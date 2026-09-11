@@ -16,11 +16,13 @@ for skill_md in sorted(ROOT.glob("*/SKILL.md")):
         continue
     fm = m.group(1)
     name_m = re.search(r"^name:\s*(\S+)\s*$", fm, re.M)
-    desc_m = re.search(r"^description:\s*(\S.*)$", fm, re.M)
+    desc_m = re.search(r"^description:[ \t]+(\S.*)$", fm, re.M)
     if not name_m:
         errors.append(f"{d.name}: frontmatter missing 'name'")
     elif name_m.group(1) != d.name:
         errors.append(f"{d.name}: name '{name_m.group(1)}' != directory name")
+    elif not re.fullmatch(r"[a-z0-9]+(-[a-z0-9]+)*", name_m.group(1)):
+        errors.append(f"{d.name}: name '{name_m.group(1)}' not kebab-case")
     if not desc_m:
         errors.append(f"{d.name}: frontmatter missing 'description'")
     for link in re.findall(r"\]\(([^)#]+?\.md)\)", text):

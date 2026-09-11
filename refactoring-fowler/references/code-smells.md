@@ -22,7 +22,7 @@ Items marked ★ are the most common and highest-value smells to check first.
 
 ### 过长参数列表（Long Parameter List）3.4
 - **识别**：参数多且总是一起传；有布尔/标记参数控制分支。
-- **建议**：Introduce Parameter Object（140）、Preserve Whole Object（131）、Replace Parameter with Query（324）、Remove Argument（127）、Remove Flag Argument（314）。
+- **建议**：Introduce Parameter Object（140）、Preserve Whole Object（319）、Replace Parameter with Query（324）、Remove Argument（127）、Remove Flag Argument（314）。
 
 ### 全局数据（Global Data）3.5
 - **识别**：模块级可变全局/静态变量被散布的代码读写。
@@ -44,7 +44,7 @@ Items marked ★ are the most common and highest-value smells to check first.
 
 ### 依恋情结（Feature Envy）3.9
 - **识别**：函数对别的对象的数据比对自身数据的兴趣更大（一堆 `other.getX()` 调用）。
-- **建议**：Move Function（198），搬到数据所在处；只有部分部分依恋 → Extract Function（106）先切分。
+- **建议**：Move Function（198），搬到数据所在处；只有部分依恋 → Extract Function（106）先切分。
 
 ### 内幕交易（Insider Trading）3.19
 - **识别**：两个模块互相大量了解对方的私有细节，"耦合夜宴"。
@@ -52,13 +52,13 @@ Items marked ★ are the most common and highest-value smells to check first.
 
 ### 过大的类（Large Class）3.20
 - **识别**：类做了太多事；字段过多、重复 switch 多；单测要 mock 一堆。
-- **建议**：先看客户端如何使用，按用途 Extract Class（182）；有共享行为 → Extract Superclass（375）、Extract Subclass（362）。
+- **建议**：先看客户端如何使用，按用途 Extract Class（182）；有共享行为 → Extract Superclass（375）。
 
 ## 数据与类型类 / Data & type smells
 
 ### 数据泥团（Data Clumps）3.10
 - **识别**：几个数据项总是成组出现（同样的 2-4 个参数在多个函数间结伴旅行）。
-- **建议**：Introduce Parameter Object（140）、Preserve Whole Object（131）、Extract Class（182）。判断标准：删掉其中一个数据项，其他还站得住吗？
+- **建议**：Introduce Parameter Object（140）、Preserve Whole Object（319）、Extract Class（182）。判断标准：删掉其中一个数据项，其他还站得住吗？
 
 ### 基本类型偏执（Primitive Obsession）3.11
 - **识别**：用基本类型表示领域概念（电话号码是 string、金额是 number、范围是 start/end 两个 int）。

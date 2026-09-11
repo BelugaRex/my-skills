@@ -79,6 +79,7 @@ Each skill directory contains at least a `SKILL.md` file, with:
 - 必需字段齐全：`name`、`description`
 - `name` 使用小写与连字符风格（kebab-case）并与目录名一致
 - 仓库公开可访问，且可以通过 `npx skills add <owner>/<repo> --list` 枚举到技能
+- 前 3 项可运行 `python3 validate_skills.py` 自动检查
 
 ## 🗂️ 推荐目录结构 / Recommended directory layout
 
@@ -86,6 +87,7 @@ Each skill directory contains at least a `SKILL.md` file, with:
 my-skills/
 ├── README.md
 ├── LICENSE
+├── validate_skills.py
 ├── answer-framework/
 │   └── SKILL.md
 ├── double-check/
