@@ -51,6 +51,10 @@ These skills are intentionally written to:
 - **中文**：用于连续协作型任务，在结束前先询问用户下一步想做什么。
 - **English**: For collaborative workflows where the agent should ask for the next step before ending.
 
+### 4. 🔧 `refactoring-fowler`
+- **中文**：基于《重构：改善既有代码的设计（第 2 版）》的重构方法论，识别 24 种代码坏味道、从名录中选手法、小步保持行为地重构。
+- **English**: Restructure code safely following Fowler's *Refactoring (2nd Ed.)* — identify code smells, pick the right refactoring, and apply it in small behavior-preserving steps.
+
 ## 📦 关于技能格式 / About the skill format
 
 每个 skill 目录至少包含一个 `SKILL.md`，并满足以下要求：
@@ -86,8 +90,13 @@ my-skills/
 │   └── SKILL.md
 ├── double-check/
 │   └── SKILL.md
-└── always-ask-next/
-	└── SKILL.md
+├── always-ask-next/
+│   └── SKILL.md
+└── refactoring-fowler/
+    ├── SKILL.md
+    └── references/
+        ├── code-smells.md
+        └── refactoring-catalog.md
 ```
 
 这种结构的好处是：
