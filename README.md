@@ -1,5 +1,7 @@
 # my-skills
 
+[![skills.sh](https://skills.sh/b/belugarex/my-skills)](https://skills.sh/belugarex/my-skills)
+
 面向 **Agent Skills / skills.sh / GitHub Copilot in VS Code** 的个人技能库。  
 A personal skill library designed for **Agent Skills / skills.sh / GitHub Copilot in VS Code**.
 
